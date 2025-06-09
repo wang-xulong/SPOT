@@ -20,11 +20,15 @@ SPOT leverages changes in empirical loss to measure task similarity without requ
 
 We define task similarity based on the empirical loss change observed when parameters trained on one task are updated using a gradient step from another task. The SPOT method measures:
 
-![Task Similarity Equation 1](eq3.png)
+<p align="center">
+  <img src="fig/eq3.jpg" />
+</p>
 
 To obtain a positive, bounded similarity score, we apply exponential scaling:
 
-![Task Similarity Equation 1](eq4.png)
+<p align="center">
+  <img src="fig/eq4.jpg" />
+</p>
 
 These formulas allow efficient estimation of transferability between tasks. In practice, lower similarity corresponds to higher forgetting risk.
 
@@ -69,7 +73,7 @@ We provide ready-to-run notebooks:
 
 The following figure illustrates the effects of task similarity on model accuracy and forgetting across SplitMNIST and SplitCIFAR10 datasets:
 
-![Effects of Task Similarity](spot_similarity_effects.png)
+![Effects of Task Similarity](fig/spot_similarity_effects.jpg)
 
 ---
 
