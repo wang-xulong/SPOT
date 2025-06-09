@@ -1,4 +1,4 @@
-# Revisiting Catastrophic Forgetting in Continual Learning via Functional Similarity
+# SPOT: An Efficient Training-Free Task Similarity Quantification Method for Continual Learning
 
 This work is under review.
 
